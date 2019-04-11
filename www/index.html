@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gästebuch</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+
+    <!-- MainContainer als Rahmen für das Layout -->
+    <div id="mainCon">
+
+        <!-- 2x Hauptelemente: headerContainer und sectionContainer als Layout -->
+        <div id="headerCon" class="objectCenterCenter">Gästebuch</div>
+        <div id="sectionCon" class="objectCenterTop">
+
+            <!-- FormularWrapper -->
+            <form onsubmit="push(); return false;">
+
+                <!-- FormContainer für Eingaben -->
+                <div id="inputFormCon">
+
+                    <!-- Input für Namen -->
+                    <div id="formTableLName" class="objectLeftTop">Name*</div>
+                    <div id="formTableRName" class="objectCenterCenter">
+                        <input type="text" id="formInputName">
+                    </div>
+
+                    <!-- Input für Nachricht -->
+                    <div id="formTableLMessage" class="objectLeftTop">Message*</div>
+                    <div id="formTableRMessage" class="objectCenterCenter">
+                        <textarea name="" id="formInputMessage"></textarea>
+                    </div>
+
+                    <!-- Button fürs Senden -->
+                    <div id="formTableCSend" class="objectRightCenter">
+                        <button id="formInputSend">Senden</button>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <!-- outputWrapper für JavaScriptKloning -->
+            <div id="outputConWrapper">
+
+                <!-- outputContainer für Ausgabe -->
+                <div class="outputCon">
+
+                    <!-- Tabelle für Ausgaben -->
+                    <div class="tableLName objectCenterCenter">Name</div>
+                    <div class="tableRDate objectCenterCenter">Date & Uhrzeit</div>
+                    <div class="tableCMessage objectLeftTop">Nachricht</div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript einbinden -->
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+    <script src="resources/js/web3.js@1.0.0-beta.37.js"></script>
+    <script src="resources/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+    background: #ffffff;
+}
+
+
+/****** Layout */
+
+#mainCon {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+        "headerCon" 
+        "sectionCon";
+}
+
+    #headerCon {
+        grid-area: headerCon;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: #778899;
+
+        font-size: 150%;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    #sectionCon {
+        grid-area: sectionCon;
+
+        width: 100%;
+        height: auto;
+
+        background-color: #e0ffff;
+    }
+
+        #inputFormCon {
+            width: 600px;
+            height: auto;
+            margin: 30px 0 30px 0;
+
+            background-color: #778899;
+
+            display: grid;
+            grid-template-columns: 35% 65%;
+            grid-template-rows: 60px 220px 60px;
+            grid-template-areas:
+                "formTableLName formTableRName"
+                "formTableLMessage formTableRMessage"
+                "formTableCSend formTableCSend"
+        }
+
+            #formTableLName {
+                grid-area: formTableLName;
+
+                padding-top: 7px;
+                padding-left: 7px;
+
+                color: #ffffff;
+            }
+
+            #formTableRName {
+                grid-area: formTableRName;
+
+                padding: 10px;
+            }
+
+            #formTableLMessage {
+                grid-area: formTableLMessage;
+
+                padding-top: 7px;
+                padding-left: 7px;
+
+                color: #ffffff;
+            }
+
+            #formTableRMessage {
+                grid-area: formTableRMessage;
+
+                padding: 10px;
+            }
+
+            #formTableCSend {
+                grid-area: formTableCSend;
+                
+                padding: 10px;
+            }
+
+        #outputConWrapper {
+            display: none;
+        }
+
+            .outputCon {
+                width: 600px;
+                height: auto;
+                margin-bottom: 30px;
+
+                background-color: #fafad2;
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 60px auto;
+                grid-template-areas:
+                    "tableLName tableRDate"
+                    "tableCMessage tableCMessage";
+            }
+
+                .tableLName {
+                    grid-area: tableLName;
+                }
+
+                .tableRDate {
+                    grid-area: tableRDate;
+                }
+
+                .tableCMessage {
+                    grid-area: tableCMessage;
+
+                    padding: 10px;
+                }
+
+
+/****** Form */
+
+#formInputName {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+
+    border: 1px solid #888888;
+    box-sizing: border-box;
+}
+
+#formInputMessage {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+
+    border: 1px solid #888888;
+    box-sizing: border-box;
+}
+
+#formInputSend {
+    width: 160px;
+    height: 100%;
+
+    background-color: #dddddd;
+
+    border: 1px solid #888888;
+}
+
+
+/****** Position */
+
+.objectLeftTop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.objectCenterTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.objectCenterCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.objectRightCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
