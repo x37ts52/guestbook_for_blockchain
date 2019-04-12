@@ -30,6 +30,8 @@ Der Smart Contract wird via [truffle](https://truffleframework.com/truffle) (Fra
 **Allen wichtigen CodeDateien habe ich mit Kommentaren versehen. Ich hoffe, diese sind für sich selbsterklärend.**
 
 *Zur Erinnerung:* Lesen aus der Blockchain ist umsonst und schreiben in die Blockchain kostet Coins (Fee).
+
+Download: [Präsentation](https://github.com/x37ts52/guestbook_for_blockchain/blob/master/praesentation/20190315_Blockchain_Development.pdf)
 <br>
 <br>
 
