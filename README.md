@@ -135,8 +135,7 @@ windows-build-tools
 ```
 npm install --global --production windows-build-tools
 ```
-<br>
-<br>
+
 Installation muss in der Windows PowerShell (oder Eingabeaufforderung) *ohne* Admin-Rechten ausgeführt werden!
 
 truffle (Framework)
