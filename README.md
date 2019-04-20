@@ -129,7 +129,15 @@ npm install -g browser-sync
 
 **Benötigte NPM Packages (global)**
 
-Alle globalen NPM Installationen müssen in der Windows PowerShell (oder Eingabeaufforderung) mit Admin-Rechten ausgeführt werden!
+Installation muss in der Windows PowerShell (oder Eingabeaufforderung) mit Admin-Rechten ausgeführt werden!
+
+windows-build-tools
+```
+npm install --global --production windows-build-tools
+```
+<br>
+<br>
+Installation muss in der Windows PowerShell (oder Eingabeaufforderung) *ohne* Admin-Rechten ausgeführt werden!
 
 truffle (Framework)
 ```
